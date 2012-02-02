@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>LoremImages - jQuery plugin</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/loremimages.css">
+</head>
+<body>
+	<div class="container">
+
+		<header id="top" class="page-header">
+			<div id="download" class="pull-right">
+				<h6 class="pull-right">Download Latest</h6>
+				<div class="btn-group">
+					<a href="//github.com/Darsain/loremImages/raw/master/jquery.loremimages.js" class="btn btn-large">Development</a>
+					<a href="//github.com/Darsain/loremImages/raw/master/jquery.loremimages.min.js" class="btn btn-large">Minified</a>
+				</div>
+			</div>
+			<hgroup>
+				<h1>LoremImages</h1>
+				<h2><small>jQuery plugin for loading random images from <a href="http://lorempixel.com"><strong>LoremPixel</strong></a> service</small></h2>
+			</hgroup>
+		</header>
+
+		<h2>Random images from all categories</h2>
+		<pre>$("#random").loremImages( 94, 150 );</pre>
+		<div id="random"></div>
+
+		<hr>
+
+		<h2>Nightlife images with random <code>width</code> value</h2>
+		<pre>$("#nightlife").loremImages( 100, 150, {
+	count:        8,
+	randomWidth:  200,
+	category:     'nightlife'
+});</pre>
+		<div id="nightlife"></div>
+
+		<footer class="footer">
+        	<p class="pull-right"><a href="#top">Back to top</a></p>
+			<p>Licensed under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
+		</footer>
+
+
+	</div>
+
+	<a href="http://github.com/Darsain/loremImages"><img style="position:absolute;top:0;left:0;border:0;" src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.loremimages.js"></script>
+	<script type="text/javascript">
+	jQuery(function($){
+
+		// Fashion
+		$("#random").loremImages( 94, 150 );
+
+		// Nightlife
+		$("#nightlife").loremImages( 100, 150, {
+			count:        8,
+			randomWidth:  200,
+			category:     'nightlife'
+		});
+
+	});
+	</script>
+</body>
+</html>
