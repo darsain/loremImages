@@ -23,22 +23,25 @@
 			</hgroup>
 		</header>
 
-		<h2>Random images from all categories</h2>
+		<h2>Random images from all categories <small>(simplest call without any options)</small></h2>
 		<pre>$("#random").loremImages( 94, 150 );</pre>
 		<div id="random"></div>
 
 		<hr>
 
-		<h2>Nightlife images with random <code>width</code> value</h2>
-		<pre>$("#nightlife").loremImages( 100, 150, {
-	count:        8,
-	randomWidth:  200,
-	category:     'nightlife'
+		<h2>B&amp;W images from nightlife category using custom item template</h2>
+		<pre>$("#nightlife").loremImages( 260, 180, {
+	count:       8,
+	grey:        1,
+	category:    'nightlife',
+	itemBuilder: function(i,url){
+		return '&lt;li class="span3"&gt;&lt;a href="http://lorempixel.com" class="thumbnail"&gt;&lt;img src="'+url+'"&gt;&lt;/a&gt;&lt;/li&gt;';
+	}
 });</pre>
-		<div id="nightlife"></div>
+		<ul class="thumbnails" id="nightlife"></ul>
 
 		<footer class="footer">
-        	<p class="pull-right"><a href="#top">Back to top</a></p>
+			<p class="pull-right"><a href="#top">Back to top</a></p>
 			<p>Licensed under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
 		</footer>
 
@@ -56,10 +59,13 @@
 		$("#random").loremImages( 94, 150 );
 
 		// Nightlife
-		$("#nightlife").loremImages( 100, 150, {
-			count:        8,
-			randomWidth:  200,
-			category:     'nightlife'
+		$("#nightlife").loremImages( 260, 180, {
+			count:       8,
+			grey:        1,
+			category:    'nightlife',
+			itemBuilder: function(i,url){
+				return '<li class="span3"><a href="http://lorempixel.com" class="thumbnail"><img src="'+url+'"></a></li>';
+			}
 		});
 
 	});
