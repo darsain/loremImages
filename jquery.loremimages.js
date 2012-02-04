@@ -1,5 +1,5 @@
 /*!
- * jQuery LoremImages v1.0.0
+ * jQuery LoremImages v1.0.1
  * https://github.com/Darsain/loremImages
  *
  * LoremIpsum equivalent for populating elements with random images.
