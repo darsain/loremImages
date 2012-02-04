@@ -28,7 +28,7 @@
 
 				var LPwidth = width + Math.round( Math.random()*o.randomWidth ),
 					LPheight = height + Math.round( Math.random()*o.randomHeight ),
-					url = '//lorempixel.com/'+( o.grey ? 'g/' : '' )+LPwidth+'/'+LPheight+'/'+o.category+'?'+Math.round( Math.random()*1000 );
+					url = '//lorempixel.com/'+( o.grey ? 'g/' : '' )+LPwidth+'/'+LPheight+'/'+(o.category ? o.category+'/' : '')+'?'+Math.round( Math.random()*1000 );
 
 				output += o.itemBuilder.call( container, i, url, LPwidth, LPheight );
 
