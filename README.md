@@ -21,8 +21,8 @@ $("#container").loremImages( width, height [, options ] );
 + `count` `[int]` number of images that should be loaded, default is `10`
 + `grey` `[bool]` whether to load only black & white images, default is `false`
 + `randomWidth` `[int]` random range for width value, default is `0`
-+ `randomHeight` `[int]` random range for width value, default is `0`
-+ `category` `[string]` specify images category, defaul is all categories. can be: `abstract, animals, city, food, nightlife, fashion, people, nature, sports, technics, transport`
++ `randomHeight` `[int]` random range for height value, default is `0`
++ `category` `[string]` images category, defaul is all categories. can be: `abstract, animals, city, food, nightlife, fashion, people, nature, sports, technics, transport`
 + `itemBuilder` `[function]` function that returns HTML for one item. function arguments are: `index, url, imgWidth, imgHeight`. default output is `<img src="[url]" alt="Lorempixel">`
 
 ###### randomWidth & randomHeight options
