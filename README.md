@@ -4,6 +4,8 @@ LoremImages is a jQuery plugin for populating your content with random images.
 Images are loaded from <a href="http://lorempixel.com">LoremPixel</a> service and licensed under the
 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike</a> license.
 
+[See the DEMO](http://darsain.github.com/loremImages)
+
 ## Usage
 
 ```js
